@@ -6,6 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
+Client.create(company: "Fooda")
+puts "Your access_token is: #{Client.first.access_token}"
+
 restaurants = Restaurant.create([
   { name: "Cemitas Puebla",
     description: "Delicious cemitas in regular or smaller (chico) size are a great departure from the everyday sandwich option, but still an easy to serve lunch. Paired with salad for a lighter lunch or rice, beans, chips and guacamole for a hearty meal, these sandwiches are sure to impress the office.",
