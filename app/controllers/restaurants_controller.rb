@@ -5,7 +5,7 @@ class RestaurantsController < ApplicationController
   end
 
   def index
-    render json: Restaurant.all
+    render json: (params[:page]? Restaurant.paginate(page: params[:page], :per_page => 20) : Restaurant.all)
   end
 
   def create
