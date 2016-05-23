@@ -38,3 +38,100 @@ restaurants = Restaurant.create([
     address: "206 W Van Buren Chicago, IL 60607"
   }
   ])
+
+
+  cemitas_puebla_id = Restaurant.find_by_name("Cemitas Puebla").id
+  la_pain_quotidien_id = Restaurant.find_by_name("Le Pain Quotidien").id
+  pleasant_house_bakery_id = Restaurant.find_by_name("Pleasant House Bakery").id
+
+
+  Restaurant.find(cemitas_puebla_id).menu_items.create([
+    { name: "Uno",
+      description: "Homemade sesame seed rolls layered with avocado, housemade chipotle sauce, Oaxacan cheese and your choice of filling; on regular or mini bread -includes bottles of chipotle, roja and verde sauce",
+      category: "Entree"
+    },
+    { name: "Dos",
+      description: "Homemade sesame seed rolls layered with avocado, housemade chipotle sauce, Oaxacan cheese and your choice of filling; on regular or mini bread -includes bottles of chipotle, roja and verde sauce",
+      category: "Entree"
+    },
+    { name: "Tres",
+      description: "Homemade sesame seed rolls layered with avocado, housemade chipotle sauce, Oaxacan cheese and your choice of filling; on regular or mini bread -includes bottles of chipotle, roja and verde sauce",
+      category: "Entree"
+    },
+    { name: "Ceviche - Large",
+      description: "Shrimp and tilapia with tomato, cilantro, onion, orange and lime juices",
+      category: "Side"
+    },
+    { name: "Ceviche - Small",
+      description: "Shrimp and tilapia with tomato, cilantro, onion, orange and lime juices",
+      category: "Side"
+    },
+    { name: "Jicama Slaw - Small",
+      description: "Jicama, carrots and cabbage in a mayo vinegar dressing",
+      category: "Side"
+    },
+    { name: "Jicama Slaw - Large",
+      description: "Jicama, carrots and cabbage in a mayo vinegar dressing",
+      category: "Side"
+    }
+  ])
+
+  Restaurant.find(la_pain_quotidien_id).menu_items.create([
+    { name: "Sandwich and Salad - Large",
+    description: "Assorted sandwiches and choice of salad",
+    category: "Entree"
+  },
+  { name: "Tartine Board - Large",
+    description: "Belgian open-faced sandwiches on organic whole-wheat sourdough",
+    category: "Entree"
+  },
+  { name: "Tartine Board - Small",
+    description: "Belgian open-faced sandwiches on organic whole-wheat sourdough",
+    category: "Entree"
+  },
+  { name: "Kale Caesar Salad - Large",
+    description: "Kale, Parmesan, housemade croutons, hard-boiled egg and caesar dressing served with a basket of organic bread",
+    category: "Entree"
+  },
+  { name: "Kale Caesar Salad - Small",
+    description: "Kale, Parmesan, housemade croutons, hard-boiled egg and caesar dressing served with a basket of organic bread",
+    category: "Entree"
+  },
+  { name: "Mini Tarts Board",
+    description: "Selection of today's mini tarts",
+    category: "Dessert"
+  },
+  { name: "Homemade Cookie Tray",
+    description: "A collections of homemade cookies and seasonal specialty cookies",
+    category: "Dessert"
+  },
+  { name: "Lemonade Iced Tea",
+    category: "Beverage"
+  },
+  { name: "Mint Lemonade",
+    category: "Beverage"
+  }
+  ])
+
+  Restaurant.find(pleasant_house_bakery_id).menu_items.create([
+  { name: "Royal Fiver Pie - Chicken Balti",
+    description: "Fragrant, mild English-style curry stew with chicken, tomato, and our own blend of fresh-ground spices",
+    restaurant_id: pleasant_house_bakery_id,
+    category: "Entree"
+  },
+  { name: "Royal Fiver Pie - Mushroom Kale",
+    description: "Lovely mushroom blend with kale in light white wine, parmesan, and cream sauce",
+    restaurant_id: pleasant_house_bakery_id,
+    category: "Entree"
+  },
+  { name: "Royal Fiver Pie - Steak and Ale",
+    description: "Royally rich, slowly braised stew with tender chunks of steak, local ale, and carrots",
+    restaurant_id: pleasant_house_bakery_id,
+    category: "Entree"
+  },
+  { name: "Royal Hibiscus Tea Fizz",
+    description: "Royally rich, slowly braised stew with tender chunks of steak, local ale, and carrots",
+    restaurant_id: pleasant_house_bakery_id,
+    category: "Beverage"
+  }
+  ])
