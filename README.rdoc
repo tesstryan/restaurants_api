@@ -9,7 +9,7 @@ Seed your database (rake db:seed)
 
   When you do this your access token will be printed out
 
-Run test cases (rake test)
+Run test cases (rake test) - rake db:migrate RAILS_ENV=test
 
 Curl commands 
 
