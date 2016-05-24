@@ -13,6 +13,6 @@ Run test cases (rake test) - rake db:migrate RAILS_ENV=test
 
 Curl commands 
 
-  curl http://localhost:3000/restaurants -H 'Authorization:Token token=“your_token_here"'
-  curl http://localhost:3000/restaurants/:id/menu_items -H 'Authorization:Token token=“your_token_here"'
-  Pagination example (5 per page): curl http://localhost:3000/restaurants?page=1 -H 'Authorization:Token token=“your_token_here"'
+  curl http://localhost:3000/restaurants -H 'Authorization:Token token="your_token_here"'
+  curl http://localhost:3000/restaurants/:id/menu_items -H 'Authorization:Token token="your_token_here"'
+  Pagination example (5 per page): curl http://localhost:3000/restaurants?page=1 -H 'Authorization:Token token="your_token_here"'
