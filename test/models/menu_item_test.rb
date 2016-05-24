@@ -8,7 +8,7 @@ class MenuItemTest < ActiveSupport::TestCase
     @menu_item = MenuItem.create(name: "Chicken Tinga Taco")
   end
 
-  test "not valid without a restaurant id" do
+  test "not valid without a restaurant id or name" do
     assert_not @menu_item.valid?
   end
 
