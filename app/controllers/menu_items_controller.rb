@@ -6,7 +6,7 @@ class MenuItemsController < ApplicationController
 
   def index
     menus = MenuItem.where(restaurant_id: params[:restaurant_id])
-    render json: (params[:page] ? menus.paginate(page: params[:page], :per_page => 20) : menus)
+    render json: (params[:page] ? menus.paginate(page: params[:page], :per_page => 5) : menus)
   end
 
   def create
