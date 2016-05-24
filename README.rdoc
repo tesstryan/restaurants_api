@@ -1,15 +1,13 @@
 
 Pull down the repo
 
-Bundle install
-
-rake db:migrate
-
-Seed your database (rake db:seed)
-
-  When you do this your access token will be printed out
-
-Run test cases (rake test) - rake db:migrate RAILS_ENV=test
+  bundle install
+  rake db:migrate
+  rake db:migrate RAILS_ENV=test
+  rake db:seed
+    When you do this your access token will be printed out
+  rake test 
+  rails s 
 
 Curl commands 
 
