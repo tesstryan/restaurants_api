@@ -139,3 +139,6 @@ restaurants = Restaurant.create([
     category: "Beverage"
   }
   ])
+
+  Tag.create(name: "Dairy Free", description: "This item does not contain dairy.", menu_item_id: MenuItem.first.id)
+  Tag.create(name: "Gluten Free", description: "This item does not contain wheat.", menu_item_id: MenuItem.first.id)

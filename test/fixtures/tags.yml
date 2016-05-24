@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+gluten_free:
+  name: Gluten Free
+  description: No wheat products included in item
+  menu_item: elotes
+
+dairy_free:
+  name: Dairy Free
+  description: No dairy products included in item
+  menu_item: elotes

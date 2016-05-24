@@ -6,20 +6,20 @@ class MenuItemsController < ApplicationController
 
   def index
     menus = MenuItem.where(restaurant_id: params[:restaurant_id])
-    render json: (params[:page] ? menus.paginate(page: params[:page], :per_page => 5) : menus)
+    render json: (params[:page] ? menus.paginate(page: params[:page], :per_page => 5).to_json(:include => [:tags]) : menus.to_json(:include => [:tags]))
   end
 
   def create
     @menu_items = MenuItem.new(menu_items_params)
     if @menu_items.save
-      render status: :created, json: @menu_items
+      render status: :created, json: @menu_items.to_json(:include => [:tags])
     else
       render status: :unprocessable_entity, json: { :errors => @menu_items.errors.full_messages }
     end
   end
 
   def show
-    render json: MenuItem.find(params[:id])
+    render json: MenuItem.find(params[:id]).to_json(:include => [:tags])
   end
 
 
