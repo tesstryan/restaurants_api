@@ -1,13 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyText
-  category: MyString
-  restaurant_id: 1
-
-two:
-  name: MyString
-  description: MyText
-  category: MyString
-  restaurant_id: 1
+elotes:
+  name: Elotes
+  description: grilled corn on the cob with mayonnaise, cotija cheese and chile piquin
+  category: Side
+  restaurant: taco_joint

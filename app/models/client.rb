@@ -2,6 +2,8 @@ class Client < ActiveRecord::Base
 
   before_create :generate_access_token
 
+  validates :company, presence: true
+
 
   private
 

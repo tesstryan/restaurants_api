@@ -1,13 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyText
-  rating: 9.99
-  address: MyString
-
-two:
-  name: MyString
-  description: MyText
-  rating: 9.99
-  address: MyString
+taco_joint:
+  name: Taco Joint
+  description: Mexican tacos, tortas & sides pair with a variety of margaritas & tequilas in a colorful cantina.
+  rating: 4.3
+  address: 1969 N Halsted St, Chicago, IL 60614
