@@ -1,28 +1,18 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pull down the repo
 
-Things you may want to cover:
+Bundle install
 
-* Ruby version
+rake db:migrate
 
-* System dependencies
+Seed your database (rake db:seed)
 
-* Configuration
+  When you do this your access token will be printed out
 
-* Database creation
+Run test cases (rake test)
 
-* Database initialization
+Curl commands 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  curl http://localhost:3000/restaurants -H 'Authorization:Token token=“your_token_here"'
+  curl http://localhost:3000/restaurants/:id/menu_items -H 'Authorization:Token token=“your_token_here"'
+  Pagination example (5 per page): curl http://localhost:3000/restaurants?page=1 -H 'Authorization:Token token=“your_token_here"'
